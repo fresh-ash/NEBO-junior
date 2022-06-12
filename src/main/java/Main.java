@@ -2,6 +2,7 @@ import common.CLI;
 import common.Command;
 import common.Input;
 import common.Messages;
+import defineMaxValue.DefineMaxValueApp;
 import degreeConverter.ConvertDegreesApp;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +15,7 @@ public class Main {
     Map<String, Command> applications = new HashMap<>();
     Input input = new CLI(new Scanner(System.in));
     applications.put("1", new ConvertDegreesApp());
+    applications.put("2", new DefineMaxValueApp());
 
     while (continueApp) {
       try {
