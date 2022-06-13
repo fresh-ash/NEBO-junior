@@ -7,6 +7,7 @@ import degreeConverter.ConvertDegreesApp;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import longestWord.LongestWordApp;
 
 public class Main {
 
@@ -16,6 +17,7 @@ public class Main {
     Input input = new CLI(new Scanner(System.in));
     applications.put("1", new ConvertDegreesApp());
     applications.put("2", new DefineMaxValueApp());
+    applications.put("3", new LongestWordApp());
 
     while (continueApp) {
       try {

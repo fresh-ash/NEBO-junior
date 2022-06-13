@@ -1,7 +1,10 @@
 package common;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CommonUtilities {
@@ -23,5 +26,9 @@ public class CommonUtilities {
 
   public static Double getMaxValueFromArrayList(List list) {
     return (Double) Collections.max(list);
+  }
+
+  public static Scanner openFileInScanner(String pathToFile) throws FileNotFoundException {
+    return new Scanner(new File(pathToFile));
   }
 }
